@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Corona the Middle East</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+	    <script src="js/html5shiv.js"></script>
+	    <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/ico/favicon.png">
+
+</head>
+<!--/head-->
+
+<body>
+    <header id="header">
+
+        <div class="navbar navbar-inverse" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+
+
+                    <a class="navbar-brand" href="index.html">
+                        <h1><img src="images/logo.png" alt="logo" width="100px"></h1>
+                    </a>
+                    <h1 class="coron">كورونا فايروس</h1>
+
+
+                </div>
+
+
+
+
+
+
+            </div>
+        </div>
+    </header>
+    <!--/#header-->
+
+    <section id="home-slider">
+        <div class="container">
+            <div class="row">
+                <div class="main-slider">
+                    <div class="slide-text">
+                        <h1 class="tilte">متابعة حالات <span class="co-19">كورونا</span> المستجدة في الشرق الأوسط</h1>
+                        <p class="info">في ظل ارتفاع حالات الإصابة بفايروس كورونا المستجد وتزايدها في الشرق الأوسط نعرض لكم آخر المستجدات في المنطقة</p>
+                    </div>
+                    <img src="images/home/slider/hill.png" class="slider-hill" alt="slider image">
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/#home-slider-->
+
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="300ms">
+                    <div class="single-service">
+                        <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="300ms">
+                            <img src="images/home/icon1.png" alt="">
+                        </div>
+                        <h2>الأردن</h2>
+
+                        <div class="row">
+
+                            <div class="col-md-3 col-xs-3">
+
+                            </div>
+                            <div class="col-md-2 col-xs-2">
+                                <h1 class="case-1"> الحالات</h1>
+                                <div class="case"><span id="cases"></span></div>
+                                <div class="case">+<span id="todayCases"></span></div>
+                            </div>
+                            <div class="col-md-2 col-xs-2">
+                                <h1 class="case-2"> التعافي</h1>
+                                <div class="case"><span id="recovered"></span></div>
+                                <div class="case">+<span id="todayRecovered"></span></div>
+
+
+                            </div>
+                            <div class="col-md-2 col-xs-2">
+                                <h1 class="case-3">الوفيات</h1>
+                                <div class="case"><span id="death"></span></div>
+                                <div class="case">+<span id="todayDeaths"></span></div>
+
+                            </div>
+                            <div class="col-md-3 col-xs-3">
+
+
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="600ms">
+                    <div class="single-service">
+                        <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="600ms">
+                            <img src="images/home/icon2.png" alt="">
+                        </div>
+                        <h2>فلسطين</h2>
+                        <div class="row">
+
+                            <div class="col-md-3 col-xs-3">
+
+                            </div>
+                            <div class="col-md-2 col-xs-2">
+                                <h1 class="case-1"> الحالات</h1>
+                                <div class="case"><span id="cases-1"></span></div>
+                                <div class="case">+<span id="todayCases-1"></span></div>
+                            </div>
+                            <div class="col-md-2 col-xs-2">
+                                <h1 class="case-2"> التعافي</h1>
+                                <div class="case"><span id="recovered-1"></span></div>
+                                <div class="case">+<span id="todayRecovered-1"></span></div>
+
+
+                            </div>
+                            <div class="col-md-2 col-xs-2">
+                                <h1 class="case-3">الوفيات</h1>
+                                <div class="case"><span id="death-1"></span></div>
+                                <div class="case">+<span id="todayDeaths-1"></span></div>
+
+                            </div>
+                            <div class="col-md-3 col-xs-3">
+
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="900ms">
+                    <div class="single-service">
+                        <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="900ms">
+                            <img src="images/home/icon3.png" alt="">
+                        </div>
+                        <h2>سوريا</h2>
+                        <div class="row">
+
+                            <div class="col-md-3 col-xs-3">
+
+                            </div>
+                            <div class="col-md-2 col-xs-2">
+                                <h1 class="case-1"> الحالات</h1>
+                                <div class="case"><span id="cases-2"></span></div>
+                                <div class="case">+<span id="todayCases-2"></span></div>
+                            </div>
+                            <div class="col-md-2 col-xs-2">
+                                <h1 class="case-2"> التعافي</h1>
+                                <div class="case"><span id="recovered-2"></span></div>
+                                <div class="case">+<span id="todayRecovered-2"></span></div>
+
+
+                            </div>
+                            <div class="col-md-2 col-xs-2">
+                                <h1 class="case-3">الوفيات</h1>
+                                <div class="case"><span id="death-2"></span></div>
+                                <div class="case">+<span id="todayDeaths-2"></span></div>
+
+                            </div>
+                            <div class="col-md-3 col-xs-3">
+
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="300ms">
+                    <div class="single-service">
+                        <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="300ms">
+                            <img src="images/home/icon4.png" alt="">
+                        </div>
+                        <h2>لبنان</h2>
+
+                        <div class="row">
+
+                            <div class="col-md-3 col-xs-3">
+
+                            </div>
+                            <div class="col-md-2 col-xs-2">
+                                <h1 class="case-1"> الحالات</h1>
+                                <div class="case"><span id="cases-3"></span></div>
+                                <div class="case">+<span id="todayCases-3"></span></div>
+                            </div>
+                            <div class="col-md-2 col-xs-2">
+                                <h1 class="case-2"> التعافي</h1>
+                                <div class="case"><span id="recovered-3"></span></div>
+                                <div class="case">+<span id="todayRecovered-3"></span></div>
+
+
+                            </div>
+                            <div class="col-md-2 col-xs-2">
+                                <h1 class="case-3">الوفيات</h1>
+                                <div class="case"><span id="death-3"></span></div>
+                                <div class="case">+<span id="todayDeaths-3"></span></div>
+
+                            </div>
+                            <div class="col-md-3 col-xs-3">
+
+
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="600ms">
+                    <div class="single-service">
+                        <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="600ms">
+                            <img src="images/home/icon5.png" alt="">
+                        </div>
+                        <h2>اليمن</h2>
+
+                        <div class="row">
+
+                            <div class="col-md-3 col-xs-3">
+
+                            </div>
+                            <div class="col-md-2 col-xs-2">
+                                <h1 class="case-1"> الحالات</h1>
+                                <div class="case"><span id="cases-4"></span></div>
+                                <div class="case">+<span id="todayCases-4"></span></div>
+                            </div>
+                            <div class="col-md-2 col-xs-2">
+                                <h1 class="case-2"> التعافي</h1>
+                                <div class="case"><span id="recovered-4"></span></div>
+                                <div class="case">+<span id="todayRecovered-4"></span></div>
+
+
+                            </div>
+                            <div class="col-md-2 col-xs-2">
+                                <h1 class="case-3">الوفيات</h1>
+                                <div class="case"><span id="death-4"></span></div>
+                                <div class="case">+<span id="todayDeaths-4"></span></div>
+
+                            </div>
+                            <div class="col-md-3 col-xs-3">
+
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="900ms">
+                    <div class="single-service">
+                        <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="900ms">
+                            <img src="images/home/icon6.png" alt="">
+                        </div>
+                        <h2>قطر</h2>
+
+                        <div class="row">
+
+                            <div class="col-md-3 col-xs-3">
+
+                            </div>
+                            <div class="col-md-2 col-xs-2">
+                                <h1 class="case-1"> الحالات</h1>
+                                <div class="case"><span id="cases-5"></span></div>
+                                <div class="case">+<span id="todayCases-5"></span></div>
+                            </div>
+                            <div class="col-md-2 col-xs-2">
+                                <h1 class="case-2"> التعافي</h1>
+                                <div class="case"><span id="recovered-5"></span></div>
+                                <div class="case">+<span id="todayRecovered-5"></span></div>
+
+
+                            </div>
+                            <div class="col-md-2 col-xs-2">
+                                <h1 class="case-3">الوفيات</h1>
+                                <div class="case"><span id="death-5"></span></div>
+                                <div class="case">+<span id="todayDeaths-5"></span></div>
+
+                            </div>
+                            <div class="col-md-3 col-xs-3">
+
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div </div>
+            </div>
+        </div>
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="300ms">
+                    <div class="single-service">
+                        <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="300ms">
+                            <img src="images/home/icon7.png" alt="">
+                        </div>
+                        <h2>البحرين</h2>
+
+                        <div class="row">
+
+                            <div class="col-md-3 col-xs-3">
+
+                            </div>
+                            <div class="col-md-2 col-xs-2">
+                                <h1 class="case-1"> الحالات</h1>
+                                <div class="case"><span id="cases-6"></span></div>
+                                <div class="case">+<span id="todayCases-6"></span></div>
+                            </div>
+                            <div class="col-md-2 col-xs-2">
+                                <h1 class="case-2"> التعافي</h1>
+                                <div class="case"><span id="recovered-6"></span></div>
+                                <div class="case">+<span id="todayRecovered-6"></span></div>
+
+
+                            </div>
+                            <div class="col-md-2 col-xs-2">
+                                <h1 class="case-3">الوفيات</h1>
+                                <div class="case"><span id="death-6"></span></div>
+                                <div class="case">+<span id="todayDeaths-6"></span></div>
+
+                            </div>
+                            <div class="col-md-3 col-xs-3">
+
+
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="600ms">
+                    <div class="single-service">
+                        <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="600ms">
+                            <img src="images/home/icon8.png" alt="">
+                        </div>
+                        <h2>عُمان</h2>
+                        <div class="row">
+
+                            <div class="col-md-3 col-xs-3">
+
+                            </div>
+                            <div class="col-md-2 col-xs-2">
+                                <h1 class="case-1"> الحالات</h1>
+                                <div class="case"><span id="cases-7"></span></div>
+                                <div class="case">+<span id="todayCases-7"></span></div>
+                            </div>
+                            <div class="col-md-2 col-xs-2">
+                                <h1 class="case-2"> التعافي</h1>
+                                <div class="case"><span id="recovered-7"></span></div>
+                                <div class="case">+<span id="todayRecovered-7"></span></div>
+
+
+                            </div>
+                            <div class="col-md-2 col-xs-2">
+                                <h1 class="case-3">الوفيات</h1>
+                                <div class="case"><span id="death-7"></span></div>
+                                <div class="case">+<span id="todayDeaths-7"></span></div>
+
+                            </div>
+                            <div class="col-md-3 col-xs-3">
+
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="900ms">
+                    <div class="single-service">
+                        <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="900ms">
+                            <img src="images/home/icon9.png" alt="">
+                        </div>
+                        <h2>الكويت</h2>
+                        <div class="row">
+
+                            <div class="col-md-3 col-xs-3">
+
+                            </div>
+                            <div class="col-md-2 col-xs-2">
+                                <h1 class="case-1"> الحالات</h1>
+                                <div class="case"><span id="cases-8"></span></div>
+                                <div class="case">+<span id="todayCases-8"></span></div>
+                            </div>
+                            <div class="col-md-2 col-xs-2">
+                                <h1 class="case-2"> التعافي</h1>
+                                <div class="case"><span id="recovered-8"></span></div>
+                                <div class="case">+<span id="todayRecovered-8"></span></div>
+
+
+                            </div>
+                            <div class="col-md-2 col-xs-2">
+                                <h1 class="case-3">الوفيات</h1>
+                                <div class="case"><span id="death-8"></span></div>
+                                <div class="case">+<span id="todayDeaths-8"></span></div>
+
+                            </div>
+                            <div class="col-md-3 col-xs-3">
+
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="300ms">
+                    <div class="single-service">
+                        <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="300ms">
+                            <img src="images/home/icon10.png" alt="">
+                        </div>
+                        <h2>تركيا</h2>
+                        <div class="row">
+
+                            <div class="col-md-3 col-xs-3">
+
+                            </div>
+                            <div class="col-md-2 col-xs-2">
+                                <h1 class="case-1"> الحالات</h1>
+                                <div class="case"><span id="cases-9"></span></div>
+                                <div class="case">+<span id="todayCases-9"></span></div>
+                            </div>
+                            <div class="col-md-2 col-xs-2">
+                                <h1 class="case-2"> التعافي</h1>
+                                <div class="case"><span id="recovered-9"></span></div>
+                                <div class="case">+<span id="todayRecovered-9"></span></div>
+
+
+                            </div>
+                            <div class="col-md-2 col-xs-2">
+                                <h1 class="case-3">الوفيات</h1>
+                                <div class="case"><span id="death-9"></span></div>
+                                <div class="case">+<span id="todayDeaths-9"></span></div>
+
+                            </div>
+                            <div class="col-md-3 col-xs-3">
+
+
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="600ms">
+                    <div class="single-service">
+                        <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="600ms">
+                            <img src="images/home/icon11.png" alt="">
+                        </div>
+                        <h2>إيران</h2>
+                        <div class="row">
+
+                            <div class="col-md-3 col-xs-3">
+
+                            </div>
+                            <div class="col-md-2 col-xs-2">
+                                <h1 class="case-1"> الحالات</h1>
+                                <div class="case"><span id="cases-10"></span></div>
+                                <div class="case">+<span id="todayCases-10"></span></div>
+                            </div>
+                            <div class="col-md-2 col-xs-2">
+                                <h1 class="case-2"> التعافي</h1>
+                                <div class="case"><span id="recovered-10"></span></div>
+                                <div class="case">+0<span id="todayRecovered-10"></span></div>
+
+
+                            </div>
+                            <div class="col-md-2 col-xs-2">
+                                <h1 class="case-3">الوفيات</h1>
+                                <div class="case"><span id="death-10"></span></div>
+                                <div class="case">+<span id="todayDeaths-10"></span></div>
+
+                            </div>
+                            <div class="col-md-3 col-xs-3">
+
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="900ms">
+                    <div class="single-service">
+                        <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="900ms">
+                            <img src="images/home/icon12.png" alt="">
+                        </div>
+                        <h2>مصر</h2>
+                        <div class="row">
+
+                            <div class="col-md-3 col-xs-3">
+
+                            </div>
+                            <div class="col-md-2 col-xs-2">
+                                <h1 class="case-1"> الحالات</h1>
+                                <div class="case"><span id="cases-11"></span></div>
+                                <div class="case">+<span id="todayCases-11"></span></div>
+                            </div>
+                            <div class="col-md-2 col-xs-2">
+                                <h1 class="case-2"> التعافي</h1>
+                                <div class="case"><span id="recovered-11"></span></div>
+                                <div class="case">+<span id="todayRecovered-11"></span></div>
+
+
+                            </div>
+                            <div class="col-md-2 col-xs-2">
+                                <h1 class="case-3">الوفيات</h1>
+                                <div class="case"><span id="death-11"></span></div>
+                                <div class="case">+<span id="todayDeaths-11"></span></div>
+
+                            </div>
+                            <div class="col-md-3 col-xs-3">
+
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div </div>
+            </div>
+
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="300ms">
+                    <div class="single-service">
+                        <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="300ms">
+                            <img src="images/home/icon-13.png" alt="">
+                        </div>
+                        <h2>الإمارات </h2>
+                        <div class="row">
+
+                            <div class="col-md-3 col-xs-3">
+
+                            </div>
+                            <div class="col-md-2 col-xs-2">
+                                <h1 class="case-1"> الحالات</h1>
+                                <div class="case"><span id="cases-12"></span></div>
+                                <div class="case">+<span id="todayCases-12"></span></div>
+                            </div>
+                            <div class="col-md-2 col-xs-2">
+                                <h1 class="case-2"> التعافي</h1>
+                                <div class="case"><span id="recovered-12"></span></div>
+                                <div class="case">+<span id="todayRecovered-12"></span></div>
+
+
+                            </div>
+                            <div class="col-md-2 col-xs-2">
+                                <h1 class="case-3">الوفيات</h1>
+                                <div class="case"><span id="death-12"></span></div>
+                                <div class="case">+<span id="todayDeaths-12"></span></div>
+
+                            </div>
+                            <div class="col-md-3 col-xs-3">
+
+
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="600ms">
+                    <div class="single-service">
+                        <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="600ms">
+                            <img src="images/home/icon-14.png" alt="">
+                        </div>
+                        <h2>العراق</h2>
+                        <div class="row">
+
+                            <div class="col-md-3 col-xs-3">
+
+                            </div>
+                            <div class="col-md-2 col-xs-2">
+                                <h1 class="case-1"> الحالات</h1>
+                                <div class="case"><span id="cases-13"></span></div>
+                                <div class="case">+<span id="todayCases-13"></span></div>
+                            </div>
+                            <div class="col-md-2 col-xs-2">
+                                <h1 class="case-2"> التعافي</h1>
+                                <div class="case"><span id="recovered-13"></span></div>
+                                <div class="case">+<span id="todayRecovered-13"></span></div>
+
+
+                            </div>
+                            <div class="col-md-2 col-xs-2">
+                                <h1 class="case-3">الوفيات</h1>
+                                <div class="case"><span id="death-13"></span></div>
+                                <div class="case">+<span id="todayDeaths-13"></span></div>
+
+                            </div>
+                            <div class="col-md-3 col-xs-3">
+
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="900ms">
+                    <div class="single-service">
+                        <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="900ms">
+                            <img src="images/home/icon-15.png" alt="">
+                        </div>
+                        <h2>السعودية</h2>
+                        <div class="row">
+
+                            <div class="col-md-3 col-xs-3">
+
+                            </div>
+                            <div class="col-md-2 col-xs-2">
+                                <h1 class="case-1"> الحالات</h1>
+                                <div class="case"><span id="cases-14"></span></div>
+                                <div class="case">+<span id="todayCases-14"></span></div>
+                            </div>
+                            <div class="col-md-2 col-xs-2">
+                                <h1 class="case-2"> التعافي</h1>
+                                <div class="case"><span id="recovered-14"></span></div>
+                                <div class="case">+<span id="todayRecovered-14"></span></div>
+
+
+                            </div>
+                            <div class="col-md-2 col-xs-2">
+                                <h1 class="case-3">الوفيات</h1>
+                                <div class="case"><span id="death-14"></span></div>
+                                <div class="case">+<span id="todayDeaths-14"></span></div>
+
+                            </div>
+                            <div class="col-md-3 col-xs-3">
+
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div </div>
+            </div>
+
+        </div>
+
+
+
+    </section>
+
+    <!--/#services-->
+
+
+
+
+    <section id="clients">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="clients text-center wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
+                        <p><img src="images/home/clients.png" class="img-responsive" alt=""></p>
+                        <h1 class="title">وسائل الوقاية </h1>
+                        <p>إن التزامك في وسائل الوقاية العامة يساهم في التقليل والحد من اصابتك بفايروس كورونا </p>
+                    </div>
+                    <div class="clients-logo wow fadeIn" data-wow-duration="1000ms" data-wow-delay="600ms">
+
+                        <div class=" col-md-2 col-xs-2 col-sm-2">
+                            <a href="#"><img src="images/home/client1.png" width="75%" class="img-responsive" alt=""></a>
+                        </div>
+                        <div class="col-md-2 col-xs-2 col-sm-2">
+                            <a href="#"><img src="images/home/client2.png" width="75%" class=" img-responsive" alt=""></a>
+                        </div>
+                        <div class="col-md-2 col-xs-2 col-sm-2">
+                            <a href="#"><img src="images/home/client3.png" width="75%" class="img-responsive" alt=""></a>
+                        </div>
+                        <div class="col-md-2 col-xs-2 col-sm-2">
+                            <a href="#"><img src="images/home/client4.png" width="75%" class="img-responsive" alt=""></a>
+                        </div>
+                        <div class="col-md-2 col-xs-2 col-sm-2">
+                            <a href="#"><img src="images/home/client5.png" width="75%" class="img-responsive" alt=""></a>
+                        </div>
+                        <div class="col-md-2 col-xs-2 col-sm-2">
+                            <a href="#"><img src="images/home/client6.png" width="75%" class="img-responsive" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!--/#clients-->
+
+
+    <footer class="page-footer font-small blue">
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2020 Copyright:
+            <a href="https://www.linkedin.com/in/yazeed-obeidat-3182b51a1/"> Yazeed Obeidat</a>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+    <!--/#footer-->
+
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
